@@ -1,0 +1,7 @@
+h1 {
+  text-align: center;
+} 
+body{
+  display: grid;
+  grid-auto-rows: auto;
+}

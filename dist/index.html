@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Lighthouse Bar Chart</title>
+</head>
+<body>
+  <!-- Display chart-->
+  <div id = 'chart-container'>
+    <section class="chart">
+      <div id="main-title-container">
+        <h1 id = "main-title">Main Title</h1>
+      </div>
+      <div id = y-axis>
+        <div id = "y-title-container">
+          <h2 id = "y-title">Your y-axis title</h2>
+        </div>
+        <div class = "all-y-nums">
+          <div class = "num-and-hr">
+            <hr class = 'y-hr'>
+            <span class = 'y-num'>100</span>            
+          </div>
+          <div class = "num-and-hr">
+            <hr class = 'y-hr'>
+            <span class = 'y-num'>80</span>        
+          </div>
+          <div class = "num-and-hr">
+            <hr class = 'y-hr'>
+            <span class = 'y-num'>60</span>          
+          </div>
+          <div class = "num-and-hr">
+            <hr class = 'y-hr'>
+            <span class = 'y-num'>40</span>          
+          </div>
+          <div class = "num-and-hr">
+            <hr class = 'y-hr'>
+            <span class = 'y-num'>20</span>    
+          </div>
+        </div>
+      </div>
+      <div class="main-square">
+        <div class="main-content">
+          <h1 id = 'place-holder'></h1>
+          <div class = 'bar-content'>
+              <div class = 'single-bar' id = "def-height-1">
+                  <span class = 'in-bar-val'>79</span>
+              </div>  
+              <div class = 'single-bar' id = "def-height-2">
+                <span class = 'in-bar-val'>38</span>
+              </div>  
+            </div>
+          </div> 
+        </div>
+      <div class = 'bottom-square'>
+        <div class = "label-square">
+          <span class = 'chart-label'>Thing 1</span>
+          <span class = 'chart-label'>Thing 2</span>
+        </div>
+      </div>
+      <div id = 'x-axis'>
+        <h3 id = 'x-title'>Your x-axis title</h3>
+      </div>
+    </section>
+  </div>
+
+  <!--Input table-->
+  <section class="table">
+    <div class = 'chart-header'>
+      <hr class = "hr1">
+      <h3 id = "input-header">Chart Input Control</h3>
+      <hr class = "hr2">
+    </div>
+    <div class="chartTitles">
+      <span>
+        Chart Title: 
+        <input id = "chart-title" type="text">
+        <input id = "main-title-color" type="color" name="main-title-color" value="#000000">
+        <button class = 'main-plus'>+</button>
+        <button class = 'main-minus'>-</button>
+      </span>
+      <span>
+        X-Axis Title: 
+        <input id = "x-axis-title" type="text">
+        <input id = "x-title-color" type="color" name="x-title-color" value="#000000">
+        <button class = 'x-plus'>+</button>
+        <button class = x-minus>-</button>
+      </span>
+      <span>
+        Y-Axis Title: 
+        <input id = "y-axis-title" type="text">
+        <input id = "y-title-color" type="color" name="y-title-color" value="#000000">
+        <button class = 'y-plus'>+</button>
+        <button class = 'y-minus'>-</button>
+      </span>
+    </div>
+    <table>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Label</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Bar Colour</th>
+            <th scope="col">Label Colour</th>
+            <th scope="col">Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="row"></th>
+            <td><input class = "label" type="text"></td>
+            <td><input class = "user-value" type="text"></td>
+            <td><input class = "bar-color" type="color" name="color11" value="#590098"></td>
+            <td><input class = "label-color" type="color" name="color12" value="#000000"></td>
+            <td><img class = 'rm' src="./png/remove-icon-png-7132.png" alt=""></td>
+        </tr>
+        <tr>
+          <th class="row"></th>
+          <td><input class = "label" type="text"></td>
+          <td><input class = "user-value"type="text"></td>
+          <td><input class = "bar-color" type="color" name="color21" value="#d01d9b"></td>
+          <td><input class = "label-color" type="color" name="color22" value="#000000"></td>
+          <td><img class = 'rm' src="./png/remove-icon-png-7132.png" alt=""></td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="buttons">
+    <button class = "add-row-btn table-btn">Add Row</button>
+    <button class = "spit-bars-btn table-btn">Spit Bars!</button>
+    </div>
+  </section>
+
+  <!--Sliders-->
+  <div class = "sliders">
+    <span>Bar Width: </span>
+    <input class = 'width-slider' type="range" min="1" max="100" value="25" class="slider" id="myRange">
+    <span>Value Position:</span>
+    <input class = 'val-height-slider' type="range" min="1" max="11" value="6" class="slider" id="myRange">
+  </div>
+
+  <script src="assets/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.table{
+    display: grid;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+thead,
+tfoot {
+    background-color: #068218c1;
+    color: #fff;
+}
+
+tbody {
+    background-color: #e4f0f5;
+}
+.buttons {
+    justify-self: center;
+    margin-top: 15px;
+}
+.table-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+caption {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(198, 198, 198);
+    padding: 5px 10px;
+}
+
+td {
+    text-align: center;
+}
+.rm {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+.rm:hover{
+  cursor: pointer;
+}
+.hr1 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: 1 px solid;
+    width: 100%;
+}
+
+.hr2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    border: 1 px solid;
+    width: 100%;
+}
+#input-header{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+.chartTitles {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
